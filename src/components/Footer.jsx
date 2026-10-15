@@ -42,7 +42,7 @@ export default function Footer() {
             <div className="pl-3 pb-2 ">Instagram</div>
           </ScrollLink>
           <div className="col-span-2 absolute top-0 left-0 w-full h-full flex items-center justify-center tracking-widest text-6xl md:text-8xl lg:text-9xl font-SaansBold -z-1 flex-wrap text-center">
-            <h1>Rafsan Creates</h1>
+            <h1>Rabiul Creates</h1>
           </div>
         </div>
       </div>

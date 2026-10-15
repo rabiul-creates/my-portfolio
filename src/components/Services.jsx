@@ -72,7 +72,7 @@ export default function Services() {
       className="services-section w-full min-h-screen my-80 font-SaansRegular  "
     >
       <div className="max-w-[1920px] w-full h-full mx-auto  px-4 sm:px-8 flex flex-col items-start justify-center ">
-        <div className="text-7xl md:text-9xl py-10">Services</div>
+        <div className=" text-5xl sm:text-6xl md:text-8xl py-10">Services</div>
 
         <div
           ref={servicesCards}

@@ -45,8 +45,8 @@ export default function Hero() {
   );
 
   return (
-    <section className="max-w-[1920px] mx-auto w-full h-screen flex flex-col items-center justify-center relative uppercase  overflow-x-hidden ">
-      <div className="w-full absolute md:translate-y-[-150%] left-0 pointer-events-none z-10 ">
+    <section className="max-w-[1920px] mx-auto w-full h-screen flex flex-col items-center justify-center relative uppercase  overflow-x-hidden  ">
+      <div className="w-full absolute translate-y-[-150%] left-0 pointer-events-none z-10 ">
         <div className="smalltitle max-w-[1920px] mx-auto relative text-xs font-SaansRegular tracking-wide sm:text-md md:text-lg w-full px-[3.5vw] lg:px-[4.5vw] flex justify-between">
           <span>One</span>
           <span>of</span>
@@ -66,17 +66,19 @@ export default function Hero() {
               damping: 8,
               mass: 0.3,
             }}
-            className="w-full text-[10vw] h-full  min-[2000px]:text-9xl text-center leading-[90%] font-SaansBold tracking-wide   absolute left-0 top-0 -z-1 radial-gradient bg-clip-text"
+            className="w-full max-sm:text-[15vw] text-[10vw] h-full  min-[2000px]:text-9xl text-center leading-[90%] font-SaansBold tracking-wide   absolute left-0 top-0 -z-1 radial-gradient bg-clip-text"
           >
-            <div className="  linear-mask  relative bigtitle ">
-              Design Engineer
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 linear-mask  relative bigtitle ">
+              <h1>Design </h1>
+              <h1>Engineer</h1>
+               
             </div>
           </motion.div>
         </div>
       </div>
 
-      <div className="w-full h-full relative ">
-        <div className="w-full h-full absolute top-0 left-0   px-[3.5vw] lg:px-[2.5vw]  pt-35 pb-15">
+      <div className="w-full h-full relative  ">
+        <div className="w-full h-full absolute -top-5 left-0  px-[3.5vw] lg:px-[2.5vw]  pt-35 pb-15">
           <div className="relative h-full w-full ">
             <div
               ref={leftBlock}

@@ -117,9 +117,9 @@ export default function Nav() {
     );
   });
   return (
-    <nav className="nav w-full max-w-[1920px] mx-auto flex items-center justify-between px-4 py-6 sm:py-10 sm:px-8 md:px-12   fixed top-0 left-0 right-0 z-20 max-sm:flex-col max-sm:gap-4">
-      <div className="text-lg sm:text-xl md:text-2xl font-SaansRegular ">
-        <span className="mr-1">Rafsan</span>
+    <nav className="nav w-full max-w-[1920px] mx-auto flex items-center justify-between px-4 py-4 sm:py-6 sm:px-8 md:px-12   fixed top-0 left-0 right-0 z-20 max-sm:flex-col ">
+      <div className="hidden sm:block text-lg sm:text-xl md:text-2xl font-SaansRegular ">
+        <span className="mr-1">Rabiul</span>
         <span>Creates</span>
       </div>
       <div className="w-full flex justify-end items-center  gap-6 sm:gap-6 md:gap-6 max-sm:justify-between">
@@ -139,6 +139,7 @@ export default function Nav() {
             closeLabel={"close"}
           />
         </div>
+       
 
         <div className="relative">
           <motion.div

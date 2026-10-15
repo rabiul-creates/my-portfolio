@@ -41,7 +41,7 @@ export default function Work() {
       id="work"
       className=" max-w-[1920px] min-h-screen flex flex-col items-center justify-center w-full px-4 md:px-8 mx-auto my-50"
     >
-      <div className="w-full text-7xl md:text-9xl font-SaansBold flex items-center justify-between uppercase py-10">
+      <div className="w-full text-5xl sm:text-6xl md:text-8xl  font-SaansBold flex items-center justify-between uppercase py-10">
         <h1>WORK</h1>
         <h1>'26</h1>
       </div>

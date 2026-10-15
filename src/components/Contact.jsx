@@ -10,10 +10,10 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="max-w-[1920px] w-full h-full flex items-center justify-center  mt-80  mx-auto font-SaansRegular"
+      className="max-w-[1920px] w-full h-full flex items-center justify-center  mt-80  mx-auto font-SaansRegular overflow-x-hidden"
     >
       <div className="contact-container px-4 sm:px-8 w-full h-full">
-        <h1 className="text-8xl">Contact</h1>
+        <h1 className="text-5xl sm:text-6xl md:text-8xl">Contact</h1>
 
         <div className="my-20 h-full w-full max-w-7xl mx-auto grid  grid-cols-1 sm:grid-cols-[1fr_minmax(30px,80px)_1fr] gap-20">
           <div className=" w-full  text-xl lg:text-3xl flex flex-col justify-center items-center space-y-8 text-center">
@@ -26,7 +26,7 @@ export default function Contact() {
             <h2 className="w-full  sm:text-start  ">Share your thoughts.</h2>
           </div>
 
-          <div className="w-full h-full max-sm:text-[30rem] text-[22rem] lg:text-[25rem]  leading-0 flex items-center justify-center">
+          <div className="w-full h-full max-sm:text-[22rem] text-[22rem] lg:text-[25rem]  leading-0 flex items-center justify-center" >
             <h1 className="max-sm:translate-x-[1.5rem] sm:translate-y-[-1.5rem]  max-sm:rotate-z-90">
               {"}"}
             </h1>

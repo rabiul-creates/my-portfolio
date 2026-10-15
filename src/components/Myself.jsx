@@ -53,18 +53,18 @@ export default function Myself() {
   return (
     <section
       id="myself"
-      className="max-w-[1920px] mx-auto myself-container min-h-screen w-full my-40 py-10 px-4 sm:px-8 flex flex-col items-start justify-around gap-10 font-SaansRegular "
+      className="max-w-[1920px] mx-auto myself-container min-h-screen w-full my-40 py-10 px-4 sm:px-8 flex flex-col items-start justify-around gap-10 font-SaansRegular overflow-x-hidden"
     >
-      <h1 className="text-6xl font-SaansBold text-start tracking-wider  ">
+      <h1 className=" text-5xl sm:text-6xl md:text-8xl font-SaansBold text-start tracking-wider  ">
         MYSELF
       </h1>
       <div className="w-full  max-w-[1920px] flex flex-col items-start justify-center  min-[1100px]:flex-row  gap-10">
-        <div className="split text-4xl font-SaansRegular w-full min-[1100px]:w-1/2  max-[1100px]:-order-1 text-wrap  flex flex-wrap gap-2 will-change-transform">
-          Hello there! I am Rafsan Islam and I specialise in frontend
+        <div className="split text-lg sm:text-xl md:text-2xl font-SaansRegular w-full min-[1100px]:w-1/2  max-[1100px]:-order-1 text-wrap  flex flex-wrap gap-2 will-change-transform">
+          Hello there! I am Rabiul Islam and I specialise in frontend
           development. Creating challenging websites is my passion.
         </div>
 
-        <div className="myself-video-container  w-full min-[1100px]:w-1/2 h-100 rounded-md  max-[1100px]:-order-2 bg-neutral-800"></div>
+        <div className="myself-video-container  w-full min-[1100px]:w-1/2  rounded-md  max-[1100px]:-order-2 bg-neutral-800 aspect-video"></div>
       </div>
 
       <div className="mt-10 py-10 w-full flex max-sm:flex-wrap gap-y-5  sm:gap-10 items-center justify-between text-sm md:text-lg lg:text-xl text-wrap">
