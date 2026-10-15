@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("./assets/SpaceGrotesk.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SaansR";
+  src: url("./assets/Saans_Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SaansB";
+  src: url("./assets/Saans_Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SaansMono";
+  src: url("SaansMono_Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "MonumentGrotesk";
+  src: url("./assets/ABCMonumentGrotesk-Regular.woff2") format("woff2");
+}
+
+@tailwind utilities;
+
+@theme {
+  --font-SaansRegular: "SaansR", Arial;
+  --font-SaansBold: "SaansB", Arial;
+  --font-SaansMono: "SaansMono", Arial;
+  --font-MonumentGrotesk: "MonumentGrotesk", Arial;
+}
+
+body {
+  font-family: var(--font-SaansRegular);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html,
+body {
+  overflow-y: scroll;
+}
+
+button {
+  font-family: var(--font-SaansRegular);
+}
+
+.radial-gradient {
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(250, 250, 250, 0.01) 0%,
+      transparent 60%
+    ),
+    rgba(15, 15, 15, 1);
+}
+
+.linear-mask {
+  mask-image: linear-gradient(
+    -75deg,
+    white calc(var(--x) + 20%),
+    transparent calc(var(--x) + 30%),
+    white calc(var(--x) + 100%)
+  );
+
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    white calc(var(--x) + 20%),
+    transparent calc(var(--x) + 30%),
+    white calc(var(--x) + 100%)
+  );
+}
+.linear-overlay {
+  background-image: linear-gradient(
+    -75deg,
+    rgba(255, 255, 255, 0.1) calc(var(--x) + 20%),
+    rgba(255, 255, 255, 0.5) calc(var(--x) + 25%),
+    rgba(255, 255, 255, 0.1) calc(var(--x) + 100%)
+  );
+
+  -webkit-background-image: linear-gradient(
+    -75deg,
+    rgba(255, 255, 255, 0.1) calc(var(--x) + 20%),
+    rgba(255, 255, 255, 0.5) calc(var(--x) + 25%),
+    rgba(255, 255, 255, 0.1) calc(var(--x) + 100%)
+  );
+  mask:
+    linear-gradient(black, black) content-box,
+    linear-gradient(black, black);
+
+  mask-composite: exclude !important;
+
+  -webkit-mask:
+    linear-gradient(black, black) content-box,
+    linear-gradient(black, black);
+
+  -webkit-mask-composite: xor !important;
+}
+
+::selection {
+  background: #fb923c;
+}
+
+::-moz-selection {
+  background: #fb923c;
+}
+
+::-webkit-selection {
+  background: #fb923c;
+}
+
+.line {
+  padding-bottom: 4px;
+  margin-bottom: -4px;
+}
+
+.will-change,
+.char {
+  transform: translate3d(0, 0, 0);
+  -o-perspective: 1000;
+  perspective: 1000;
+  transform: perspective(1000);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+  transform: rotate(0.05deg);
+  -moz-transform: rotate(0.05deg);
+}
+
+.counter {
+  font-size: clamp(24px, 8vw, 48px);
+  letter-spacing: -5px;
+  font-family: monospace;
+}
